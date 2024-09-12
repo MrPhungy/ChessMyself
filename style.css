@@ -1,0 +1,65 @@
+#board {
+    margin: 20px auto;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* CSS class to rotate the board 180 degrees */
+.flipped {
+    transform: rotate(180deg);
+    transform-origin: center center;
+    /*transition: transform 0.5s ease; /* Smooth transition */
+}
+
+/* Ensure the pieces are rotated along with the board */
+.flipped .square-55d63 {
+    transform: rotate(180deg); /* Flip pieces with their squares */
+    transform-origin: center center;
+    /*transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.piece {
+    transition: transform 0.5s ease; /* Smooth transition for piece rotation */
+}
+
+.action-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6c6b6b; /* Default background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.action-button:hover {
+    background-color: #a5a5a5; /* Darker on hover */
+}
+
+#undoButton {
+    background-color: #ba6761; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#undoButton:hover {
+    background-color: #f7958e; /* Darker red on hover */
+}
+
+.possible-move {
+    background-color: rgb(133, 191, 133); /* Light green background */
+    box-shadow: inset 0 0 0 2px rgb(99, 138, 99); /* Inner border effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
